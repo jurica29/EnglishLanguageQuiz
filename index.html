@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>English Language Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Css file linked to the html -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Top part of the page containing question and time counter in the corners -->
+    <div class="header">
+        <div id="scorecounter">Score:<span id="sCount"> 0</div>
+        <div id="timecount"><span id="timer">02 : 00</span></div>
+    </div>
+    <!-- Start page of the quiz displaying brief overview of the quiz and the position of timer and progress counter in the corners of the screen -->
+    <div class="main">
+        <div id="start-page">
+            <h1>WELCOME TO MY ENGLISH LANGUAGE QUIZ! </h1>
+            <p>This quiz has 10 questions that will test your knowledge of English language and culture.
+               The timer is displayed in the upper right corner, while the current score is located in the upper left corner of the screen, so that you can follow
+               your current progress and time.
+            </p>
+            <button id="start" class="btn" onclick="beginGame()">Start</button>
+        </div>
+        <!-- Second page displaying question and answer options -->
+        <div id="question-container" class="hide">
+            <h1>ENGLISH LANGUAGE QUIZ</h1>
+            <h2 id="question">Who was William Shakespeare?</h2>
+            <button id="answer-1" class="btn" onclick="handleClick(event)">Option 1</button>
+            <button id="answer-2" class="btn" onclick="handleClick(event)">Option 2</button>
+            <button id="answer-3" class="btn" onclick="handleClick(event)">Option 3</button>
+            <button id="answer-4" class="btn" onclick="handleClick(event)">Option 4</button>
+        </div>
+        <!-- Div containing "quit" button at the bottom of the page -->
+        <div id="bottomquit" class="hide">
+            <button id="quit" class="btn submit-btn" onclick="handleQuit()">EXIT</button>
+    </div>
+<!-- Last page -->
+<div id="results" class="hide2">
+        <h2>YOU HAVE COMPLETED THE QUIZ!</h2>
+        <br>
+        <p>YOUR FINAL SCORE IS: <span id="final-score"></span></p>
+    </div>
+</div> 
+<footer> <small>&copy; Copyright 2022, Jurica Puljiz, All Rights Reserved.</small> </footer> 
+    <!-- 2 Javascript files linked to the html file -->
+    <script defer src="./javascript/questions.js"></script>
+    <script defer src="./javascript/script.js"></script>
+</body>
+
+</html>
