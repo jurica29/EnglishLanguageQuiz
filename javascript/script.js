@@ -127,3 +127,16 @@ function handleClick(event) {
             displayQuestions();
         }, 200);
 };
+
+//Function to get the correct answer from the array
+function getCorrectAnswer(currentQ) {
+    //setting the variable "arr" for the loop
+    let arr = questions[currentQ].answersArray; 
+    // Going through answersArray, identifying correct answer
+    for (let i = 0; i < arr.length; i++) { 
+        if (arr[i].correct) {
+            // grabbing correct answer.
+            return arr[i].answer
+        }
+    }
+};
