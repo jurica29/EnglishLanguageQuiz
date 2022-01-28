@@ -101,3 +101,29 @@ function scoreIncrease() {
 }
 
 let correctAnswers = []; //empty array that needs to be used for storing incorrect answers sent from below function
+
+// When user clicks an answer button
+function handleClick(event) {
+    // Get the correct answer string
+    let correctAnswer = getCorrectAnswer(currentQ);
+    // Compare to user click
+    if (event.target.textContent === correctAnswer) {
+        currentScore += 1; 
+        scoreIncrease(); //increasing score in the counter area of upper left corner
+        event.target.classList.add('correct'); // color indicates correct choice
+    } else {
+        alert(`Correct answer is: "${correctAnswer}"`); //alert message displayed when incorrect answer is chosen and it displays the correct one to the user.
+        event.target.classList.add('wrong');// add color to indicate incorrect choice   
+        //this condition is set for sending the text of answers that user didn't answer correctly into the empty array correctAnswers (NEW)
+        if (event.target.textContent !== correctAnswer) { //if the click is not correct answer
+            var element = correctAnswer; //get correct answer
+            correctAnswers.push(element); //push the correct answer into the previously stated array
+    }
+}
+    // Wait 0.200 sec, reset button color, go to next question (preventing issues with score incrementing by the use of this small time frame)
+    setTimeout(
+        () => {
+            event.target.className = 'btn';
+            displayQuestions();
+        }, 200);
+};
