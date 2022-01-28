@@ -94,3 +94,10 @@ function startTimer() {
     }
 },1200);
 }
+
+//Function for incrementing score for 1 when the answer is correct
+function scoreIncrease() {
+    document.getElementById("sCount").innerText =` ${currentScore}`;  
+}
+
+let correctAnswers = []; //empty array that needs to be used for storing incorrect answers sent from below function
