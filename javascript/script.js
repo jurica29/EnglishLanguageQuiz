@@ -140,3 +140,11 @@ function getCorrectAnswer(currentQ) {
         }
     }
 };
+
+//When user clicks the quit button at the bottom of the page will display message giving options to leave or stay
+function handleQuit() {
+    if (confirm("Press 'OK' to leave English Language Quiz, or 'Cancel' if you want to stay: "))
+    {         
+        window.location="https://jurica29.github.io/testquizrepo/";
+     }
+    }
