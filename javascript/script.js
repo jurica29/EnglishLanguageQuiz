@@ -19,3 +19,20 @@ let timerElement = document.getElementById("timer");
 let timeLeft = 2; //timer is set to 5 minutes
 let quizTimeInMinutes = timeLeft * 60 * 60;
 let quizTime = quizTimeInMinutes / 60; //used for displaying time in mins
+
+//FUNCTIONS
+// Move from one page to another
+function switchDiv(curr, next) {
+    document.getElementById(curr).classList.add('hide');
+    document.getElementById(next).removeAttribute('class');
+};
+ 
+//Display quit button when user starts the game
+function changeDiv(div1) {
+    document.getElementById(div1).classList.add('bottomquit');
+};
+
+//Removing exit button when user reaches the end
+function removeQuit() {
+    document.getElementById("bottomquit").classList.remove("bottomquit");
+};
