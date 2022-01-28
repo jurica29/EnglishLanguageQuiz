@@ -147,4 +147,22 @@ function handleQuit() {
     {         
         window.location="https://jurica29.github.io/testquizrepo/";
      }
-    }
+    };
+
+
+
+
+
+
+
+
+
+    //Function for the end of the quiz
+function endGame() {
+    displayA(); //calling function stated above
+    removeQuit(quit); //removing exit button
+    switchDiv('question-container', 'results'); //switching between two divs
+    // Show current score on results page
+    finalScore = currentScore;
+    finalScoreElement.textContent = finalScore; //enabling display of the score
+   };
