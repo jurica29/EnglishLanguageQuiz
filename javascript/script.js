@@ -46,3 +46,33 @@ function beginGame() {
     displayQuestions(); //calling the function for questions display upon entering the next page 
     startTimer(); //calling the function for starting the timer
 };
+
+//This function provides shuffling option that is used for both questions and answers and called at the beginning
+function shuffle(a) {
+    for (let i = 0; i < a.length; i++) {
+        let secondQ = Math.floor(a.length * Math.random());
+        let temp = a[i];
+        a[i] = a[secondQ];
+        a[secondQ] = temp;
+    }
+}
+
+//This function is responsible for displaying questions
+function displayQuestions() {
+    currentQ++; //incrementing the value of the previously stated variable by postfix increment, which then results in 0 (1st question displayed)
+    // Finish the game if there are no more questions
+    if (currentQ === questions.length) { //if the current question number is strictly not equal to number of questions (10) 
+          endGame(); //end the game
+    } else {
+        // if not, then get questions from the array
+        questionEl.textContent = questions[currentQ].question;
+        // and get answers from the array
+        let qarray = [optionOne, optionTwo, optionThree, optionFour]; //creating variable "qarray" with array of questions
+        let i = 0; //setting variable i for the callback function
+        qarray.forEach(element => {
+            //left side is input of a function, right side is the output of that function, used for displaying answers from array
+            element.innerText = questions[currentQ].answersArray[i].answer;
+            i++
+        }, i);
+    };
+};
