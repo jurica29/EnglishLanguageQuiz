@@ -36,3 +36,13 @@ function changeDiv(div1) {
 function removeQuit() {
     document.getElementById("bottomquit").classList.remove("bottomquit");
 };
+
+//This functions is responsible for the start game button on the opening page
+function beginGame() { 
+    switchDiv('start-page', 'question-container'); //calling function for switching pages
+    changeDiv('bottomquit'); //calling function for displaying quit button
+    shuffle(questions); //shuffle option for questions
+    questions.forEach(q => shuffle(q.answersArray)); //shuffle for answers
+    displayQuestions(); //calling the function for questions display upon entering the next page 
+    startTimer(); //calling the function for starting the timer
+};
