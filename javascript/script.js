@@ -76,3 +76,21 @@ function displayQuestions() {
         }, i);
     };
 };
+
+//This main function is starting and controlling the timer as the quiz goes on.
+function startTimer() {
+    let timer = setInterval(function() {  
+    if(currentQ === questions.length) { //if the user finishes the last question
+        clearInterval(timer); //stopping the timer
+        endGame();  //calling the "end game" function
+    } else if (quizTime <= 0) { //if the time hits 0 then timer stops and "end game" function is called
+        clearInterval(timer); //stopping the timer
+        endGame();  //caling the "end game" function
+    } else { //else display the time in form of minutes and seconds in the timer area via .innerHTML (Math.floor used for displaying of integers)
+        quizTime--; //countdown (decrementing the amount of time by 1)
+        let sec = Math.floor(quizTime % 60);   //converting time
+        let min = Math.floor(quizTime / 60) % 10;
+        timerElement.innerHTML = `${min} : ${sec}`;   //displays time via inner.HTML
+    }
+},1200);
+}
