@@ -159,19 +159,19 @@ function handleQuit() {
                 //the options below enable display of 3 different messages for 3 different outcomes
             } 
             //if user has tried and didn't answer something correctly or if user didn't have any incorrect answers and still not being 100% correct
-            finalDisplay.innerHTML = `IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
+            finalDisplay.innerHTML = `IF YOU HAVE UNSUCCESSFULLY ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
         } else  {
             //if user has 100% score
             finalDisplay.innerHTML =  `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
         } 
         //if the time is up and user has score equal to 0
         if (currentScore == 0 && quizTime == 0) { 
-            finalDisplay.innerHTML = `:( SORRY, TIME IS UP!<br><br> IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`;     
+            finalDisplay.innerHTML = `:( SORRY, TIME IS UP!<br><br> IF YOU HAVE UNSUCCESSFULLY ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`;     
         }
     };
 
 
-    //Function for the end of the quiz
+ //Function for the end of the quiz
 function endGame() {
     displayA(); //calling function stated above
     removeQuit(quit); //removing exit button
