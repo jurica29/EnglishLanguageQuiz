@@ -47,7 +47,7 @@ Click on the below page names to see these wireframes:
 ### 5. Surface
 * Colours
 
-When considering the colour theme of this project the objective was to use black and white theme in accordance with the main subject of the website. Also, beige is used for certain elements, such as text, title and timeline boxes.
+Main colours used are grey, whitesmoke and goldenrod. Grey is used for text and buttons, white for text and backgrounds of containers, while goldenrod is used for box shadowing and hovering for buttons.
 
 <img src="assets/images/readmeimages/colourscheme.jpg"/>
 

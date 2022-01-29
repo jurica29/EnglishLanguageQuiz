@@ -1,158 +1,158 @@
 * {
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none;   /* Removing outline */ 
-    user-select: none;   /* This property prevents users to select any text on the page in order to prevent cheating */ 
-  }
-  
-  /* General style applied to the body of the page */
-  body {
-    background-image: url(../images/quizbackground.jpg);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-  }
-  
-  /* Style for paragraph text */
-  p {
-   font-size: large;
-   font-weight: bold;
-   margin-top: auto;
-   letter-spacing: 1.5px;
-   color: grey;
-  }
-
-  /* Timer and score counter aligned to the head of the page */
-  .header {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: large;
-  }
-  
-  /* Style for question counter in the upper left corner */
-  #scorecounter {
-    text-align: center;
-    max-width: 30%;
-    max-height: 45px;
-    width: 155px;
-    padding: 13px 10px 5px 5px;
-    background-color: whitesmoke;
-    color:  grey;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px 2px goldenrod;
-  }
-  
-  /* Style for timer in the upper right corner */
-  #timecount {
-    text-align: center;
-    max-width: 35%;
-    max-height: 45px;
-    width: 120px;
-    padding: 13px;
-    background-color: whitesmoke;
-    color:  grey;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px 2px goldenrod;
-  }
-  
-  /* Quiz content on centered card */
-  .main {
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    width: 900px;
-    max-width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px 2px goldenrod;
-    text-align: center;
-    color:  grey;
-  } 
-  
-  /* For navigating through questions */
-  .hide {
-    display: none;
-  }
-  /* For hiding or displaying scores page when finished */
-  .hide2 {
-    display: none;
-  }
-  
-  /* Button styles, hover effect */
-  .btn {
-    width: 40%;
-    background-color:  grey;
-    border-radius: 5px;
-    border: 3px solid white;
-    padding: 15px 20px;
-    margin: 15px;
-    color: white;
-    font-size: large;
-  }
-  
-  /* Style for "quit" button */
-  .btn.quit-btn {
-    border-width: 2px;
-    font-size: large;
-    width: fit-content;
-    padding: 5px;
-  }
-  
-  /* Hovering option for buttons */
-  .btn:hover {
-    cursor: pointer;
-    background-color: goldenrod;
-  }
-  /* Correct answers get green color */
-  .btn.correct {
-    background-color: hsl(120, 100%, 30%);
-    border-color: hsl(120, 100%, 20%);
-  }
-  /* Incorrect answers get red color*/
-  .btn.wrong {
-    background-color: hsl(0, 100%, 30%);
-    border-color: hsl(0, 100%, 20%);
-  }
-  
-  /* Style for the buttons at the bottom of the quiz */
-  .bottomquit {
-    display: flex;
-    justify-content: center;     /* justify-content: space-between; If I want to add "next" button*/
-    width: 100%;
-    font-weight: bold;
-    font-size: large;
-    margin-top: 10px;
-    padding: 10px;
-  }
-    /* Footer style */
-  footer {
-    margin-top:auto; 
-    color: white;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none; /* Removing outline */
+  user-select: none; /* This property prevents users to select any text on the page in order to prevent cheating */
 }
 
-  /* Responsiveness for buttons and bottom margin of the quiz container on smaller devices */
-  @media screen and (max-width: 576px) {
-    .header {
-      font-size: medium;
-    }
-  
-      .btn {
-          width: 80%;
-          padding: 10px 15px;
-          margin: 5px 10px;
-      }
-      .main {
-          margin-bottom: 40px;
-      }
-    }
-    #questioncounter {
-      padding: 12px 1px 1px 1px;
-    }
+/* General style applied to the body of the page */
+body {
+  background-image: url(../images/quizbackground.jpg);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+/* Style for paragraph text */
+p {
+  font-size: large;
+  font-weight: bold;
+  margin-top: auto;
+  letter-spacing: 1.5px;
+  color: grey;
+}
+
+/* Timer and score counter aligned to the head of the page */
+.header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Style for question counter in the upper left corner */
+#scorecounter {
+  text-align: center;
+  max-width: 30%;
+  max-height: 45px;
+  width: 155px;
+  padding: 13px 10px 5px 5px;
+  background-color: whitesmoke;
+  color: grey;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 2px goldenrod;
+}
+
+/* Style for timer in the upper right corner */
+#timecount {
+  text-align: center;
+  max-width: 35%;
+  max-height: 45px;
+  width: 120px;
+  padding: 13px;
+  background-color: whitesmoke;
+  color: grey;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 2px goldenrod;
+}
+
+/* Quiz content on centered card */
+.main {
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 900px;
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 2px goldenrod;
+  text-align: center;
+  color: grey;
+}
+
+/* For navigating through questions */
+.hide {
+  display: none;
+}
+/* For hiding or displaying scores page when finished */
+.hide2 {
+  display: none;
+}
+
+/* Button styles, hover effect */
+.btn {
+  width: 40%;
+  background-color: grey;
+  border-radius: 5px;
+  border: 3px solid white;
+  padding: 15px 20px;
+  margin: 15px;
+  color: whitesmoke;
+  font-size: large;
+}
+
+/* Style for "quit" button */
+.btn.quit-btn {
+  border-width: 2px;
+  font-size: large;
+  width: fit-content;
+  padding: 5px;
+}
+
+/* Hovering option for buttons */
+.btn:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+}
+/* Correct answers get green color */
+.btn.correct {
+  background-color: hsl(120, 100%, 30%);
+  border-color: hsl(120, 100%, 20%);
+}
+/* Incorrect answers get red color*/
+.btn.wrong {
+  background-color: hsl(0, 100%, 30%);
+  border-color: hsl(0, 100%, 20%);
+}
+
+/* Style for the buttons at the bottom of the quiz */
+.bottomquit {
+  display: flex;
+  justify-content: center; /* justify-content: space-between; If I want to add "next" button*/
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* Footer style */
+footer {
+  margin-top: auto;
+  color: whitesmoke;
+}
+
+/* Responsiveness for buttons and bottom margin of the quiz container on smaller devices */
+@media screen and (max-width: 576px) {
+  .header {
+    font-size: medium;
+  }
+
+  .btn {
+    width: 80%;
+    padding: 10px 15px;
+    margin: 5px 10px;
+  }
+  .main {
+    margin-bottom: 40px;
+  }
+}
+#questioncounter {
+  padding: 12px 1px 1px 1px;
+}
