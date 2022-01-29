@@ -72,6 +72,14 @@ There is a score counter in the upper left corner, while the timer is located in
 
 <img src= "./images/readmeimages/quiz2.jpg" width="700">
 
+* Interactive message displays when user clicks on the incorrect answer and displays the correct answer to the user.
+
+<img src= "./images/readmeimages/message.jpg" width="700">
+
+* Interactive message displays when user wants to exit the game, giving user two possibilities.
+
+<img src= "./images/readmeimages/exitmessage.jpg" width="700">
+
 + END PAGE
 
 This page is displaying a final score and a message according to the outcome of the quiz, while also enabling user to see the correct
@@ -132,7 +140,7 @@ As it can be seen here, there are 3 variables that JS Hint considers to be unuse
  
  Tested for available devices, webpage works well. It is responsive as intended.
 
- [Screenshots from a mobile phone device](https://github.com/jurica29/Nikola-Tesla/tree/main/assets/images/readmeimages/smallerscreens)
+ [Screenshots from a mobile phone device](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/smallerdevices.jpg)
 
 ## Future Features
 
