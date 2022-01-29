@@ -72,7 +72,7 @@ There is a score counter in the upper left corner, while the timer is located in
 
 <img src= "./images/readmeimages/quiz2.jpg" width="700">
 
-* Interactive message displays when user clicks on the incorrect answer and displays the correct answer to the user.
+* Interactive message displays when user clicks on the incorrect answer and displays the correct answer to the user, which is also followed by color change of the incorrect option (red).
 
 <img src= "./images/readmeimages/message.jpg" width="700">
 
@@ -140,7 +140,7 @@ As it can be seen here, there are 3 variables that JS Hint considers to be unuse
  
  Tested for available devices, webpage works well. It is responsive as intended.
 
- [Screenshots from a mobile phone device](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/smallerdevices.jpg)
+ [Screenshot from a mobile phone device](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/smallerdevices.jpg)
 
 ## Future Features
 
