@@ -1,7 +1,7 @@
 # English Language Quiz
 This is a quiz that tests your knowledge on English language and culture. 
 
-<img src="assets/images/readmeimages/amiresponsive.jpg"/>
+<img src="./images/readmeimages/amiresponsive.jpg"/>
 
 The deployed website can be viewed here. [English Language Quiz](https://jurica29.github.io/EnglishLanguageQuiz/).
 
@@ -36,24 +36,24 @@ Wireframes created with Balsamiq. The project was developed from initial wirefra
 
 Click on the below page names to see these wireframes:
 
-[Start page](https://github.com/jurica29/Project-2/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/startpage.jpg)
+[Start page](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/startpage.jpg)
 
 
-[Quiz](https://github.com/jurica29/Project-2/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/quizpage.jpg)
+[Quiz page](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/quizpage.jpg)
 
 
-[End page](https://github.com/jurica29/Project-1/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/endpage.jpg)
+[End page](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/endpage.jpg)
 
 ### 5. Surface
 * Colours
 
 Main colours used are grey, whitesmoke and goldenrod. Grey is used for text and buttons, white for text and backgrounds of containers, while goldenrod is used for box shadowing and hovering for buttons.
 
-<img src="assets/images/readmeimages/colourscheme.jpg"/>
+<img src="./images/readmeimages/colourscheme.jpg"/>
 
 * Font Selection
  
-Title font, "Bebas Neue", was chosen from [Google Fonts](https://fonts.google.com/), while there were two default fonts used across the website: Garamond (for headers) and Arial (for paragraphs).
+The font family used across the website for both headings and paragraphs is "Verdana, Geneva, Tahoma, sans-serif".
 
 ## Existing Features 
 
