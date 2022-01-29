@@ -96,6 +96,11 @@ The footer section is very simple and just includes the copyright text.
 # Testing
 
 ## Automated tests
+  + LIGHTHOUSE TEST
+
+  The website has been test via Lighthouse from Dev tools.
+
+ <img src= "./images/readmeimages/lighthouse1.jpg" width="700">
 
   + HTML
 
