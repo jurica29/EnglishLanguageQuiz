@@ -16,7 +16,7 @@ let finalScore; //variable used for the last function to display score
 let timerElement = document.getElementById("timer");
 
 //Variables 
-let timeLeft = 2; //timer is set to 5 minutes
+let timeLeft = 2; //timer is set to 2 minutes
 let quizTimeInMinutes = timeLeft * 60 * 60;
 let quizTime = quizTimeInMinutes / 60; //used for displaying time in mins
 
@@ -25,17 +25,17 @@ let quizTime = quizTimeInMinutes / 60; //used for displaying time in mins
 function switchDiv(curr, next) {
     document.getElementById(curr).classList.add('hide');
     document.getElementById(next).removeAttribute('class');
-};
+}
  
 //Display quit button when user starts the game
 function changeDiv(div1) {
     document.getElementById(div1).classList.add('bottomquit');
-};
+}
 
 //Removing exit button when user reaches the end
 function removeQuit() {
     document.getElementById("bottomquit").classList.remove("bottomquit");
-};
+}
 
 //This functions is responsible for the start game button on the opening page
 function beginGame() { 
@@ -45,7 +45,7 @@ function beginGame() {
     questions.forEach(q => shuffle(q.answersArray)); //shuffle for answers
     displayQuestions(); //calling the function for questions display upon entering the next page 
     startTimer(); //calling the function for starting the timer
-};
+}
 
 //This function provides shuffling option that is used for both questions and answers and called at the beginning
 function shuffle(a) {
@@ -55,7 +55,7 @@ function shuffle(a) {
         a[i] = a[secondQ];
         a[secondQ] = temp;
     }
-};
+}
 
 //This function is responsible for displaying questions
 function displayQuestions() {
@@ -72,10 +72,10 @@ function displayQuestions() {
         qarray.forEach(element => {
             //left side is input of a function, right side is the output of that function, used for displaying answers from array
             element.innerText = questions[currentQ].answersArray[i].answer;
-            i++
+            i++;
         }, i);
-    };
-};
+    }
+}
 
 //This main function is starting and controlling the timer as the quiz goes on.
 function startTimer() {
@@ -85,7 +85,7 @@ function startTimer() {
         endGame();  //calling the "end game" function
     } else if (quizTime <= 0) { //if the time hits 0 then timer stops and "end game" function is called
         clearInterval(timer); //stopping the timer
-        endGame();  //caling the "end game" function
+        endGame(); //calling end game function
     } else { //else display the time in form of minutes and seconds in the timer area via .innerHTML (Math.floor used for displaying of integers)
         quizTime--; //countdown (decrementing the amount of time by 1)
         let sec = Math.floor(quizTime % 60);   //converting time
@@ -95,10 +95,11 @@ function startTimer() {
 },1200);
 }
 
+
 //Function for incrementing score for 1 when the answer is correct
 function scoreIncrease() {
     document.getElementById("sCount").innerText =` ${currentScore}`;  
-};
+}
 
 let correctAnswers = []; //empty array that needs to be used for storing incorrect answers sent from below function
 
@@ -126,7 +127,7 @@ function handleClick(event) {
             event.target.className = 'btn';
             displayQuestions();
         }, 200);
-};
+}
 
 //Function to get the correct answer from the array
 function getCorrectAnswer(currentQ) {
@@ -136,10 +137,11 @@ function getCorrectAnswer(currentQ) {
     for (let i = 0; i < arr.length; i++) { 
         if (arr[i].correct) {
             // grabbing correct answer.
-            return arr[i].answer
+            return arr[i].answer;
         }
     }
-};
+}
+
 
 //When user clicks the quit button at the bottom of the page will display message giving options to leave or stay
 function handleQuit() {
@@ -147,10 +149,9 @@ function handleQuit() {
     {         
         window.location="https://jurica29.github.io/testquizrepo/";
      }
-    };
+    }
 
-
-//This function is a multipurpose function for the last page of the quiz
+    //This function is a multipurpose function for the last page of the quiz
     function displayA() {
         let cAnswers = ""; //string used for storing the missed answers
         if (currentScore < 10) { 
@@ -159,24 +160,26 @@ function handleQuit() {
                 //the options below enable display of 3 different messages for 3 different outcomes
             } 
             //if user has tried and didn't answer something correctly or if user didn't have any incorrect answers and still not being 100% correct
-            finalDisplay.innerHTML = `IF YOU HAVE UNSUCCESSFULLY ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
+            finalDisplay.innerHTML = `IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
         } else  {
             //if user has 100% score
-            finalDisplay.innerHTML = `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
+            finalDisplay.innerHTML =  `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
         } 
         //if the time is up and user has score equal to 0
         if (currentScore == 0 && quizTime == 0) { 
-            finalDisplay.innerHTML = `:( SORRY, TIME IS UP!<br><br> IF YOU HAVE UNSUCCESSFULLY ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`;     
+            finalDisplay.innerHTML = `:( SORRY, TIME IS UP!<br><br> IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`;     
         }
-    };
+    }
+  
 
 
- //Function for the end of the quiz
+    
+//Function for the end of the quiz
 function endGame() {
-    displayA(); //calling function stated above
-    removeQuit(quit); //removing exit button
-    switchDiv('question-container', 'results'); //switching between two divs
-    // Show current score on results page
-    finalScore = currentScore;
-    finalScoreElement.textContent = finalScore; //enabling display of the score
-   };
+     displayA(); //calling function stated above
+     removeQuit(quit); //removing exit button
+     switchDiv('question-container', 'results'); //switching between two divs
+     // Show current score on results page
+     finalScore = currentScore;
+     finalScoreElement.textContent = finalScore; //enabling display of the score
+    }
