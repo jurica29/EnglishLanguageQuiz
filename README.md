@@ -56,6 +56,7 @@ Main colours used are grey, whitesmoke and goldenrod. Grey is used for text and 
 The font family used across the website for both headings and paragraphs is "Verdana, Geneva, Tahoma, sans-serif".
 
 ## Existing Features 
+
 + START PAGE
 
 This is a start page displaying the introducing message and instructions. Also, it enables user to start game when ready.
@@ -93,13 +94,13 @@ The footer section is very simple and just includes the copyright text.
   The whole HTML code has been tested in the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
   Code Validation results:
   
-  |[Results](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)     
+  [Results](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/html.jpg)     
     
    + CSS
 
 No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
 
-CSS validation results can be viewed [here](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/cssvalidation.jpg)
+CSS validation results can be viewed [here](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/css%20.jpg)
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
@@ -110,9 +111,12 @@ No warnings were found.
 + JAVASCRIPT 
 
 The whole JS code has been tested in the JS Hint [JS Hint](https://jshint.com/).
+
   Code Validation results:
   
-  |[Results](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)  
+  [Results](https://github.com/jurica29/EnglishLanguageQuiz/blob/main/images/readmeimages/jshint.jpg)  
+
+As it can be seen here, there are 3 variables that JS Hint considers to be unused. However, these are efficiently working in the existing code, thus not hindering any functionality or interactiveness.
 
 ## Manual Testing
 
@@ -147,18 +151,18 @@ of language learning. Also, the timer could be having some sounds that would imp
   - In the GitHub repository, navigate to the Settings tab; 
   - From the source section drop-down menu, select the Master Branch;
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-The live link can be found [here](https://github.com/jurica29/Nikola-Tesla).
+The live link can be found [here](https://github.com/jurica29/EnglishLanguageQuiz).
 
 ### Forking the GitHub Repository:
 
 By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/Nikola-Tesla)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/EnglishLanguageQuiz)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/Nikola-Tesla)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/EnglishLanguageQuiz)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -173,34 +177,30 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Content
 
-All content was written using sources as: 
-
-- [World History Project](https://worldhistoryproject.org/topics/nikola-tesla)
-
-- [Wikipedia](https://en.wikipedia.org/wiki/Nikola_Tesla)
+I am author of the content that is used in questions and answers.
 
 ### Media
 
-- All pictures and images used in this project are from [depositphotos](https://depositphotos.com/) and [freepik](https://www.freepik.com/home).
-- [Youtube](https://www.youtube.com/) videos were used on media page.
-Pictures were treated (resized) with IrfanView app.
+- Image used in this project is from [depositphotos](https://depositphotos.com/).
+Picture was treated (resized) with IrfanView app.
 
 ### Work based in other code
 
 + [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on website.
 + [W3 Schools](https://www.w3schools.com/) - Used for variety of tutorials and deeper understanding of some important concepts related to both HTML and CSS.
-+ [Online Tutorials Youtube channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) - Used for timeline code adaptation.
-+ [Web Cifar Youtube channel](https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ) - Used for timeline code adaptation.
-+ ["Love Running" footer code](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main/06-site-footer/02-footer-styling) - Footer adapted from this code.
++ [Web Cifar Youtube channel](https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ) - Used for possible quiz ideas.
++ [James Q Quick Youtube tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&ab_channel=JamesQQuick) - Used for the outline ideas.
+
 
 ### Acknowledgements
 
--	To the Code Institute course material, as the basis of all my knowledge is from here.
+-	To the Code Institute course material, as the basis of all my knowledge comes from there.
 -	To the Slack community as I have used the different channels to find answers to problems!
 -  Stack Overflow as a valuable resource for solving a couple of issues.
--  [W3schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/) for general reference.
+- To [Freecodecamp](https://www.freecodecamp.org/) for its' dedicated JS tutorial.
+-  [W3schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/) for general reference and some tips.
 
 I would also like to thank to:
 
 -	My mentor Rahul, for his time, support and guidance throughout our video calls.
--	My fiancée Maja, for all support and patience.
+-	My fiancée Maja, for all support and patience during the project development.
