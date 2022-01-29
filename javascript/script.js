@@ -55,7 +55,7 @@ function shuffle(a) {
         a[i] = a[secondQ];
         a[secondQ] = temp;
     }
-}
+};
 
 //This function is responsible for displaying questions
 function displayQuestions() {
@@ -98,7 +98,7 @@ function startTimer() {
 //Function for incrementing score for 1 when the answer is correct
 function scoreIncrease() {
     document.getElementById("sCount").innerText =` ${currentScore}`;  
-}
+};
 
 let correctAnswers = []; //empty array that needs to be used for storing incorrect answers sent from below function
 
@@ -162,7 +162,7 @@ function handleQuit() {
             finalDisplay.innerHTML = `IF YOU HAVE UNSUCCESSFULLY ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
         } else  {
             //if user has 100% score
-            finalDisplay.innerHTML =  `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
+            finalDisplay.innerHTML = `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
         } 
         //if the time is up and user has score equal to 0
         if (currentScore == 0 && quizTime == 0) { 
