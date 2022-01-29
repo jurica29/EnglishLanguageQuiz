@@ -1,108 +1,255 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# English Language Quiz
+This is a quiz that tests your knowledge on English language and culture. 
 
-Welcome jurica29,
+<img src="assets/images/readmeimages/amiresponsive.jpg"/>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The deployed website can be viewed here. [English Language Quiz](https://jurica29.github.io/EnglishLanguageQuiz/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## UX
+### User Stories
++ As a user, I want to…
+1.	be able to navigate through the quiz easily.
+2.	see what is my current score all the time.
+3.	see how much time I have left.
+4.	see the feedback on my answers.
+5.  get the final feedback on my performance and attempts at the end of the quiz.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### 1. Strategy 
+* Project Purpose
+  * Create an interactive quiz with consistent styling across all pages ensuring that the application runs flawlessly across all devices.
 
-`python3 -m http.server`
+### 2. Scope
+ * I wanted a simple, straightforward and intuitive UX experience.
+ * Provide a fun and interactive application that tests users' English knowledge.
+ * A site that is visually appealing on most devices.
 
-A blue button should appear to click: _Make Public_,
+### 3. Structure
+*	A simple layout enables quick and easy navigation.
+*	There are 3 basic parts of the quiz:
+     * score counter in the upper left corner
+     * time counter in the upper right corner
+     * quiz card in the upper middle part of the page.
 
-Another blue button should appear to click: _Open Browser_.
+### 4. Skeleton
+Wireframes created with Balsamiq. The project was developed from initial wireframes and very slight modifications were made during the development process to assure better usability. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Click on the below page names to see these wireframes:
 
-A blue button should appear to click: _Make Public_,
+[Start page](https://github.com/jurica29/Project-2/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/startpage.jpg)
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+[Quiz](https://github.com/jurica29/Project-2/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/quizpage.jpg)
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+[End page](https://github.com/jurica29/Project-1/blob/4ae3f1fbf933a4cb1b795c88946703d83e6a17c4/assets/images/readmeimages/endpage.jpg)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### 5. Surface
+* Colours
 
-------
+When considering the colour theme of this project the objective was to use black and white theme in accordance with the main subject of the website. Also, beige is used for certain elements, such as text, title and timeline boxes.
 
-## Release History
+<img src="assets/images/readmeimages/colourscheme.jpg"/>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Font Selection
+ 
+Title font, "Bebas Neue", was chosen from [Google Fonts](https://fonts.google.com/), while there were two default fonts used across the website: Garamond (for headers) and Arial (for paragraphs).
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Existing Features 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
++ Navigation Bar 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ Featured on all three pages, the full responsive navigation bar includes links to the Home page, Quotes and Media page and is identical in each page to allow for easy navigation and consistent user experience.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<img src="assets/images/readmeimages/navbar.jpg" width="1100">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
++ The home page image
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<img src= "assets/images/Tesla2.jpg" width="400">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Tesla's portrait photo is used at the home page.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
++ Home page
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Home page is consisted of three main elements:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+1. Introduction text
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+A fully responsive texbox containing a short textual introduction into Tesla's life.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img src="assets/images/readmeimages/introductionbox.jpg" width="700">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+2. Timeline
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A center piece of the first page is this fully responsive timeline, which contains the most important events from Tesla's life.
 
-------
+<img src="assets/images/readmeimages/timeline.jpg" width="700">
+(timeline snippet)
 
-## FAQ about the uptime script
+3. Newsletter box *(at the bottom across 3 pages)
 
-**Why have you added this script?**
+This simple, effective and fully responsive newsletter box is located just before the footer. It is positioned in the same place across all 3 pages and allows for quick and easy newsletter subscription.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<img src="assets/images/readmeimages/newsletter.jpg">
 
-**How will this affect me?**
++ Quotes page
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+1. Image in the center
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Tesla's portrait is in the top centre position of the page.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<img src="assets/images/Tesla1.jpg">
 
-**So….?**
+2. Quotes
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+These quote boxes are positioned vertically across the centre of the page, fully responsive on smaller screen sizes.
 
-**Can I opt out?**
+<img src="assets/images/readmeimages/quotesboxes.jpg" width="400">
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
++ Media page 
 
+1. Videos in containers (from Youtube)
+
+These documentaries and other videos are embedded Youtube videos. They are positioned vertically across the centre of the page, in fully responsive containers.
+
+<img src="assets/images/readmeimages/videos.jpg" width="400">
+
+(video containers snippet)
+
++ Footer 
+
+The footer section includes links to visit potential social media pages.
+The links will open in a new tab to keep users on the page, while allowing easy navigation to share content. 
+
+<img src="assets/images/readmeimages/footer.jpg">
+
+# Testing
+
+## Automated tests
+
+  + HTML
+
+  Passing the HTML from all templates and base into the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
+  Code Validation results:
+  
+  |[Home Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)     |[Quotes Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation2.jpg)    |[Media Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation3.jpg)|
+    
+   + CSS
+
+No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/). 
+
+CSS validation results can be viewed [here](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/cssvalidation.jpg)
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+No warnings were found.
+
+## Manual Testing
+
+   + Desktop
+
+ Mozilla Firefox, Google Chrome, Microsoft Edge: everything is working good. Page loads and all of the page features are working.
+
+   + Mobile
+ 
+ Tested with Huawei P30, Samsung A52, Huawei P40 and iPhone 12. It is responsive as intended.
+
+   + Mozilla Dev Tools
+ 
+ Tested for available devices, webpage works well. It is responsive as intended.
+
+ [Screenshots from a mobile phone device](https://github.com/jurica29/Nikola-Tesla/tree/main/assets/images/readmeimages/smallerscreens)
+
++ Errors
+
+On the 3 pages, Wave showed 1 error that can be viewed [here](https://github.com/jurica29/Nikola-Tesla/tree/main/assets/images/readmeimages//wave.jpg). 
+
+That error was fixed by adding the "aria-labelledby" attribute to the form, which helps the assistive technology, such as screen readers, to catalog the object, so that users can navigate between them.
+   
+The alerts for each page can be viewed on the links:
+
+[Home](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/homealerts.jpg)
+
+[Quotes](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/quotesalerts.jpg)
+
+[Media](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/mediaalerts.jpg)
+
+The second page has a different name in Github, instead of "quotes.html" it is named as "joinus.html". This happened due to change of plans and late realisation that the change will be permanent, so all changes made were already committed to "joinus.html".
+
+## Future Features
+
+I would like to add more content to media page, which could provide more audiovisual information, which would be possibly positioned in three columns across the page.
+Also, maybe I would like to add more graphical addons, such as some sketches in the background, which would also need to be not limiting responsiveness of the website itself.
+Moreover, maybe I would add an extra page with specific sections on Tesla's work, which could provide more details for technically more skilled visitors.
+
+## Project Bugs and Solutions:
+
+ No known bugs for now.
+
+## Deployment
+
+ The website was deployed to GitHub pages. 
+ 
+ * The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab; 
+  - From the source section drop-down menu, select the Master Branch;
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+The live link can be found [here](https://github.com/jurica29/Nikola-Tesla).
+
+### Forking the GitHub Repository:
+
+By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/Nikola-Tesla)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jurica29/Nikola-Tesla)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
+7. Press Enter. Your local clone will be created.
 
-**Anything more?**
+## Credits 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Content
 
----
+All content was written using sources as: 
 
-Happy coding!
+- [World History Project](https://worldhistoryproject.org/topics/nikola-tesla)
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Nikola_Tesla)
+
+### Media
+
+- All pictures and images used in this project are from [depositphotos](https://depositphotos.com/) and [freepik](https://www.freepik.com/home).
+- [Youtube](https://www.youtube.com/) videos were used on media page.
+Pictures were treated (resized) with IrfanView app.
+
+### Work based in other code
+
++ [Favicon generator](https://www.favicon-generator.org/) – Used to create favicon used on website.
++ [W3 Schools](https://www.w3schools.com/) - Used for variety of tutorials and deeper understanding of some important concepts related to both HTML and CSS.
++ [Online Tutorials Youtube channel](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) - Used for timeline code adaptation.
++ [Web Cifar Youtube channel](https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ) - Used for timeline code adaptation.
++ ["Love Running" footer code](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main/06-site-footer/02-footer-styling) - Footer adapted from this code.
+
+### Acknowledgements
+
+-	To the Code Institute course material, as the basis of all my knowledge is from here.
+-	To the Slack community as I have used the different channels to find answers to problems!
+-  Stack Overflow as a valuable resource for solving a couple of issues.
+-  [W3schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/) for general reference.
+
+I would also like to thank to:
+
+-	My mentor Rahul, for his time, support and guidance throughout our video calls.
+-	My fiancée Maja, for all support and patience.
