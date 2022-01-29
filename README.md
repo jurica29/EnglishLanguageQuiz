@@ -1,5 +1,5 @@
 # English Language Quiz
-This is a quiz that tests your knowledge on English language and culture. 
+This is a quiz that tests users' knowledge of English language and culture.
 
 <img src="./images/readmeimages/amiresponsive.jpg"/>
 
@@ -49,79 +49,40 @@ Click on the below page names to see these wireframes:
 
 Main colours used are grey, whitesmoke and goldenrod. Grey is used for text and buttons, white for text and backgrounds of containers, while goldenrod is used for box shadowing and hovering for buttons.
 
-<img src="./images/readmeimages/colourscheme.jpg"/>
+<img src="./images/readmeimages/colourscheme.jpg" width="700">
 
 * Font Selection
  
 The font family used across the website for both headings and paragraphs is "Verdana, Geneva, Tahoma, sans-serif".
 
 ## Existing Features 
++ START PAGE
 
-+ Navigation Bar 
+This is a start page displaying the introducing message and instructions. Also, it enables user to start game when ready.
 
- Featured on all three pages, the full responsive navigation bar includes links to the Home page, Quotes and Media page and is identical in each page to allow for easy navigation and consistent user experience.
+<img src= "./images/readmeimages/quiz1.jpg" width="700">
 
-<img src="assets/images/readmeimages/navbar.jpg" width="1100">
+All the other pages are connected to this one and javascript enables interactive display of each of them as the user moves through the app.
 
-+ The home page image
++ QUIZ PAGE
 
-<img src= "assets/images/Tesla2.jpg" width="400">
+This page is displaying question and answers, while also enabling user to quit game whenever they want via the "exit" button.
+There is a score counter in the upper left corner, while the timer is located in the upper right corner.
 
-Tesla's portrait photo is used at the home page.
+<img src= "./images/readmeimages/quiz2.jpg" width="700">
 
-+ Home page
++ END PAGE
 
-Home page is consisted of three main elements:
+This page is displaying a final score and a message according to the outcome of the quiz, while also enabling user to see the correct
+answers for all of his attempted answers.
 
-1. Introduction text
+<img src= "./images/readmeimages/quiz3.jpg" width="700">
 
-A fully responsive texbox containing a short textual introduction into Tesla's life.
++ FOOTER
 
-<img src="assets/images/readmeimages/introductionbox.jpg" width="700">
+The footer section is very simple and just includes the copyright text.
 
-2. Timeline
-
-A center piece of the first page is this fully responsive timeline, which contains the most important events from Tesla's life.
-
-<img src="assets/images/readmeimages/timeline.jpg" width="700">
-(timeline snippet)
-
-3. Newsletter box *(at the bottom across 3 pages)
-
-This simple, effective and fully responsive newsletter box is located just before the footer. It is positioned in the same place across all 3 pages and allows for quick and easy newsletter subscription.
-
-<img src="assets/images/readmeimages/newsletter.jpg">
-
-+ Quotes page
-
-1. Image in the center
-
-Tesla's portrait is in the top centre position of the page.
-
-<img src="assets/images/Tesla1.jpg">
-
-2. Quotes
-
-These quote boxes are positioned vertically across the centre of the page, fully responsive on smaller screen sizes.
-
-<img src="assets/images/readmeimages/quotesboxes.jpg" width="400">
-
-+ Media page 
-
-1. Videos in containers (from Youtube)
-
-These documentaries and other videos are embedded Youtube videos. They are positioned vertically across the centre of the page, in fully responsive containers.
-
-<img src="assets/images/readmeimages/videos.jpg" width="400">
-
-(video containers snippet)
-
-+ Footer 
-
-The footer section includes links to visit potential social media pages.
-The links will open in a new tab to keep users on the page, while allowing easy navigation to share content. 
-
-<img src="assets/images/readmeimages/footer.jpg">
+<img src= "./images/readmeimages/footer.jpg" width="700">
 
 # Testing
 
@@ -129,10 +90,10 @@ The links will open in a new tab to keep users on the page, while allowing easy 
 
   + HTML
 
-  Passing the HTML from all templates and base into the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
+  The whole HTML code has been tested in the W3C Markup Validator no errors have been found [W3C validator](https://validator.w3.org/).
   Code Validation results:
   
-  |[Home Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)     |[Quotes Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation2.jpg)    |[Media Page](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation3.jpg)|
+  |[Results](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)     
     
    + CSS
 
@@ -145,6 +106,13 @@ CSS validation results can be viewed [here](https://github.com/jurica29/Project-
             alt="Valid CSS!" />
     </a>
 No warnings were found.
+
++ JAVASCRIPT 
+
+The whole JS code has been tested in the JS Hint [JS Hint](https://jshint.com/).
+  Code Validation results:
+  
+  |[Results](https://github.com/jurica29/Project-1/blob/27cb79af6f944ae9b2bcc8792944be6a03e72609/assets/images/readmeimages/validation1.jpg)  
 
 ## Manual Testing
 
@@ -162,31 +130,14 @@ No warnings were found.
 
  [Screenshots from a mobile phone device](https://github.com/jurica29/Nikola-Tesla/tree/main/assets/images/readmeimages/smallerscreens)
 
-+ Errors
-
-On the 3 pages, Wave showed 1 error that can be viewed [here](https://github.com/jurica29/Nikola-Tesla/tree/main/assets/images/readmeimages//wave.jpg). 
-
-That error was fixed by adding the "aria-labelledby" attribute to the form, which helps the assistive technology, such as screen readers, to catalog the object, so that users can navigate between them.
-   
-The alerts for each page can be viewed on the links:
-
-[Home](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/homealerts.jpg)
-
-[Quotes](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/quotesalerts.jpg)
-
-[Media](https://github.com/jurica29/Project-1/blob/a9966d3ce32d81fd5693004fe262ddf207458d04/assets/images/readmeimages/mediaalerts.jpg)
-
-The second page has a different name in Github, instead of "quotes.html" it is named as "joinus.html". This happened due to change of plans and late realisation that the change will be permanent, so all changes made were already committed to "joinus.html".
-
 ## Future Features
 
-I would like to add more content to media page, which could provide more audiovisual information, which would be possibly positioned in three columns across the page.
-Also, maybe I would like to add more graphical addons, such as some sketches in the background, which would also need to be not limiting responsiveness of the website itself.
-Moreover, maybe I would add an extra page with specific sections on Tesla's work, which could provide more details for technically more skilled visitors.
+I would like to add further graphical improvements and possibly sounds, videos or images that would be used throughout the quiz for the purpose
+of language learning. Also, the timer could be having some sounds that would improve the whole game experience.
 
 ## Project Bugs and Solutions:
 
- No known bugs for now.
+ Tested but not found in my tests.
 
 ## Deployment
 

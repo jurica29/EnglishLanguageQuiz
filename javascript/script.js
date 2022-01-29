@@ -146,7 +146,7 @@ function getCorrectAnswer(currentQ) {
 //When user clicks the quit button at the bottom of the page will display message giving options to leave or stay
 function handleQuit() {
 	if (confirm("Press 'OK' to leave English Language Quiz, or 'Cancel' if you want to stay: ")) {
-		window.location = "https://jurica29.github.io/testquizrepo/";
+		window.location = "https://jurica29.github.io/EnglishLanguageQuiz/";
 	}
 }
 
@@ -176,7 +176,7 @@ function displayA() {
 //Function for the end of the quiz
 function endGame() {
 	displayA(); //calling function stated above
-	removeQuit(quit); //removing exit button
+	removeQuit(); //removing exit button
 	switchDiv('question-container', 'results'); //switching between two divs
 	// Show current score on results page
 	finalScore = currentScore;
