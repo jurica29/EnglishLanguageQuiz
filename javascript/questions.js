@@ -1,5 +1,3 @@
-//Variable which contains an array consisted of multiple objects where the questions and answers are stored// 
-//These arrays are using boolean method correct/false for determining the correct and false answers//
 var questions = [
     {
         question: 'Who was William Shakespeare?',
@@ -85,10 +83,10 @@ var questions = [
     {
         question: 'What kind of noun is any name?',
         answersArray: [
-            { answer: 'Proper', correct: true },  // Correct
-            { answer: 'Improper', correct: false },
-            { answer: 'Long', correct: false },
-            { answer: 'Complex', correct: false }]
+            { answer: 'proper noun', correct: true },  // Correct
+            { answer: 'improper noun', correct: false },
+            { answer: 'long noun', correct: false },
+            { answer: 'complex noun', correct: false }]
     }
 
 ];
