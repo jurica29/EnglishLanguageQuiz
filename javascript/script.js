@@ -150,11 +150,25 @@ function handleQuit() {
     };
 
 
-
-
-
-
-
+//This function is a multipurpose function for the last page of the quiz
+    function displayA() {
+        let cAnswers = ""; //string used for storing the missed answers
+        if (currentScore < 10) { 
+            for (let i = 0; i < correctAnswers.length; i++) { //this condition is set to loop through an array of correct answers that user did not answer correctly
+                cAnswers += correctAnswers[i] + "<br><br>"; 
+                //the options below enable display of 3 different messages for 3 different outcomes
+            } 
+            //if user has tried and didn't answer something correctly or if user didn't have any incorrect answers and still not being 100% correct
+            finalDisplay.innerHTML = `IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`; 
+        } else  {
+            //if user has 100% score
+            finalDisplay.innerHTML =  `WELL DONE!<br><br>YOU ANSWERED ALL QUESTIONS CORRECTLY!`; 
+        } 
+        //if the time is up and user has score equal to 0
+        if (currentScore == 0 && quizTime == 0) { 
+            finalDisplay.innerHTML = `:( SORRY, TIME IS UP!<br><br> IF YOU HAVE ATTEMPTED ANSWERING SOME QUESTIONS, CORRECT OPTIONS WILL BE DISPLAYED HERE.<br><br>${cAnswers}`;     
+        }
+    };
 
 
     //Function for the end of the quiz
