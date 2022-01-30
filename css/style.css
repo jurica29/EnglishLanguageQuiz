@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;   
   outline: none; /* Removing outline */
   user-select: none; /* This property prevents users to select any text on the page in order to prevent cheating */
 }

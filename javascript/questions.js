@@ -1,4 +1,5 @@
 //Variable containing questions in array
+//Boolean method is used to determine correct answers
 var questions = [{
     question: 'Who was William Shakespeare?',
     answersArray: [{

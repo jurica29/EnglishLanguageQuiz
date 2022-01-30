@@ -1,3 +1,4 @@
+//DISCLAIMER: Quiz outline was inspired by tutorials stated in readme.md, however the code from tutorials was not used in this quiz
 //VARIABLES
 let questionEl = document.getElementById('question');
 let optionOne = document.getElementById('answer-1');
@@ -15,19 +16,19 @@ let finalScore; //variable used for the last function to display score
 //Getting the timer element from the html
 let timerElement = document.getElementById("timer");
 
-//Variables 
-let timeLeft = 2; //timer is set to 2 minutes
+//Variables for timer
+let timeLeft = 2; //timer is set to 2 minutes but it can be easily adapted if the quiz is expanded in the future
 let quizTimeInMinutes = timeLeft * 60 * 60;
 let quizTime = quizTimeInMinutes / 60; //used for displaying time in mins
 
 //FUNCTIONS
-// Move from one page to another
+// Move from one page to another according to user input
 function switchDiv(curr, next) {
 	document.getElementById(curr).classList.add('hide');
 	document.getElementById(next).removeAttribute('class');
 }
 
-//Display quit button when user starts the game
+//Display exit button when user starts the game and moves to questions and answers
 function changeDiv(div1) {
 	document.getElementById(div1).classList.add('bottomquit');
 }
@@ -90,13 +91,13 @@ function startTimer() {
 			quizTime--; //countdown (decrementing the amount of time by 1)
 			let sec = Math.floor(quizTime % 60); //converting time
 			let min = Math.floor(quizTime / 60) % 10;
-			timerElement.innerHTML = `${min} : ${sec}`; //displays time via inner.HTML
+			timerElement.innerHTML = `${min} : ${sec}`; //displays time via inner.HTML in minutes and seconds
 		}
 	}, 1200);
 }
 
 
-//Function for incrementing score for 1 when the answer is correct
+//Function for incrementing score by 1 when the answer is correct
 function scoreIncrease() {
 	document.getElementById("sCount").innerText = ` ${currentScore}`;
 }
